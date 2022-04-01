@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<head>
+
+</head>
+
+<body>
+    <p1>정말 삭제하시겠습니까?</p1>
+    <form method="post">
+        {% csrf_token %}
+        {{ 폼키.as_p }}
+        <button type="submit">전송</button>
+
+
+    </form>
+
+
+</body>
+
+{% endblock content %}
