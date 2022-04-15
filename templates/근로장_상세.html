@@ -1,0 +1,41 @@
+<!-- <head>
+    <style>
+        .근로장 {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: #f2f4f3;
+        }
+    </style>
+
+</head>
+
+<body> -->
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                <h2 class="text-sm title-font text-gray-500 tracking-widest"></h2>
+                <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">{{근로장키.작업장}} {{근로장키.관리자}} {{근로장키.주소}}
+                </h1>
+                <div class="flex mb-11">
+                </div>
+
+                <h1>{{근로장키.작업장}}의 근로자 정보 입니다.</h1>
+                {% for 근로자 in 근로자키%}
+                <div class="근로자">
+                    <a> 이름: {{근로자키.이름}} 나이: {{근로자키.나이}} 작업장:{{근로자키.작업장1}}
+
+
+
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+
+                            </body>
+                            {% endfor %}
+                            {% endblock content %}

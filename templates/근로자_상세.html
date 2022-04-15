@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                <h2 class="text-sm title-font text-gray-500 tracking-widest"></h2>
+                <!-- <h1>{{근로장키.작업장}}의 근로자 정보 입니다.</h1> -->
+                {% for 근로자 in 근로자키%}
+                <div class="근로자">
+                    <a> 이름: {{근로자키.이름}} 나이: {{근로자키.나이}} 작업장:{{근로자키.작업장1}}
+
+                        </h1>
+
+
+                        {% endfor %}
+
+                        {% endblock content %}
